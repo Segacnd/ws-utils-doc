@@ -11,6 +11,10 @@ import { UseElementScrollPosition } from '../components/use-element-scroll-posit
 import { UseElementSize } from '../components/use-element-size';
 import { UseInterval } from '../components/use-interval';
 import { UseIsFirstRender } from '../components/use-is-first-render';
+import { UseLatest } from '../components/use-latest';
+import { UseMediaQuery } from '../components/use-media-query';
+import { UseOutsideClick } from '../components/use-outside-click';
+import { UseScrollPosition } from '../components/use-scroll-position';
 
 export default function Home() {
 	return (
@@ -42,6 +46,10 @@ export default function Home() {
 				<UseElementSize />
 				<UseInterval />
 				<UseIsFirstRender />
+				<UseLatest />
+				<UseMediaQuery />
+				<UseOutsideClick />
+				<UseScrollPosition />
 			</main>
 		</div>
 	);

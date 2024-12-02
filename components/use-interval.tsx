@@ -4,7 +4,7 @@ import imageContext from '@/public/use-interval.jpg';
 export const UseInterval = () => {
 	return (
 		<div className='flex flex-col p-4 gap-2'>
-			<Devider id={'context-generator'} />
+			<Devider id={'use-interval'} />
 			<h3 className='text-3xl mb-4'>useInterval </h3>
 			<p className='pl-4'>
 				<span className='text-blue-500'>useInterval </span> - позволяет
