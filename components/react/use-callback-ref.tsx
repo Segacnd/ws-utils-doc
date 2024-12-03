@@ -1,6 +1,12 @@
 import Image from 'next/image';
 import { Devider } from './devider';
 import imageContext from '@/public/use-callback-ref.jpg';
+import { InstallWidget } from '../install-widget';
+const data = {
+	npm: 'npm i @ws-utils/react-use-callback-ref',
+	pnpm: 'pnpm i @ws-utils/react-use-callback-ref',
+	yarn: 'yarn add @ws-utils/react-use-callback-ref',
+};
 export const UseCallbackRef = () => {
 	return (
 		<div className='flex flex-col p-4 gap-2'>
@@ -11,6 +17,7 @@ export const UseCallbackRef = () => {
 				создает стабильную ссылку на колбэк-функцию, всегда имеющую доступ к
 				актуальным значениям из замыкания.
 			</p>
+			<InstallWidget data={data} />
 			<ul className='mt-4'>
 				<span className='text-2xl'>Params:</span>
 				<li className='ml-4'>

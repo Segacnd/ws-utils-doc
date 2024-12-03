@@ -1,6 +1,13 @@
 import Image from 'next/image';
 import { Devider } from './devider';
 import imageContext from '@/public/merge-refs.jpg';
+import { InstallWidget } from '../install-widget';
+
+const data = {
+	npm: 'npm i @ws-utils/react-merge-refs',
+	pnpm: 'pnpm i @ws-utils/react-merge-refs',
+	yarn: 'yarn add @ws-utils/react-merge-refs',
+};
 export const MergeRefs = () => {
 	return (
 		<div className='flex flex-col p-4 gap-2'>
@@ -11,6 +18,7 @@ export const MergeRefs = () => {
 				объединения нескольких React-рефов в один. Она позволяет применить
 				несколько рефов к одному DOM-элементу или компоненту.
 			</p>
+			<InstallWidget data={data} />
 			<ul className='mt-4'>
 				<span className='text-2xl'>Params:</span>
 				<li className='ml-4'>

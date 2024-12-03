@@ -1,6 +1,12 @@
 import Image from 'next/image';
 import { Devider } from './devider';
 import imageContext from '@/public/use-outside-click.jpg';
+import { InstallWidget } from '../install-widget';
+const data = {
+	npm: 'npm i @ws-utils/react-use-outside-click',
+	pnpm: 'pnpm i @ws-utils/react-use-outside-click',
+	yarn: 'yarn add @ws-utils/react-use-outside-click',
+};
 export const UseOutsideClick = () => {
 	return (
 		<div className='flex flex-col p-4 gap-2'>
@@ -10,6 +16,7 @@ export const UseOutsideClick = () => {
 				<span className='text-blue-500'>useOutsideClick</span> - позволяет
 				отслеживать клики вне указанного элемента.
 			</p>
+			<InstallWidget data={data} />
 			<ul className='mt-4'>
 				<span className='text-2xl'>Params:</span>
 				<li className='ml-4'>

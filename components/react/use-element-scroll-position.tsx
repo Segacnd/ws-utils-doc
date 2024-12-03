@@ -1,6 +1,12 @@
 import Image from 'next/image';
 import { Devider } from './devider';
 import imageContext from '@/public/use-element-scroll-position.jpg';
+import { InstallWidget } from '../install-widget';
+const data = {
+	npm: 'npm i @ws-utils/react-use-element-scroll-position',
+	pnpm: 'pnpm i @ws-utils/react-use-element-scroll-position',
+	yarn: 'yarn add @ws-utils/react-use-element-scroll-position',
+};
 export const UseElementScrollPosition = () => {
 	return (
 		<div className='flex flex-col p-4 gap-2'>
@@ -10,6 +16,7 @@ export const UseElementScrollPosition = () => {
 				<span className='text-blue-500'>useElementScrollPosition</span> -
 				отслеживает позицию прокрутки указанного DOM-элемента.
 			</p>
+			<InstallWidget data={data} />
 			<ul className='mt-4'>
 				<span className='text-2xl'>Params:</span>
 				<li className='ml-4'>

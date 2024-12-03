@@ -1,6 +1,12 @@
 import Image from 'next/image';
 import { Devider } from './devider';
 import imageContext from '@/public/use-latest.jpg';
+import { InstallWidget } from '../install-widget';
+const data = {
+	npm: 'npm i @ws-utils/react-use-latest',
+	pnpm: 'pnpm i @ws-utils/react-use-latest',
+	yarn: 'yarn add @ws-utils/react-use-latest',
+};
 export const UseLatest = () => {
 	return (
 		<div className='flex flex-col p-4 gap-2'>
@@ -11,7 +17,7 @@ export const UseLatest = () => {
 				создания React контекста с предустановленными Provider и хуком
 				useContext.
 			</p>
-		
+			<InstallWidget data={data} />
 			<p className='text-2xl mt-4'>Example</p>
 			<Image className='rounded-xl' src={imageContext} alt='image context' />
 		</div>

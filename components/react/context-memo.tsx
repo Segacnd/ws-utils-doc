@@ -1,6 +1,12 @@
 import Image from 'next/image';
 import { Devider } from './devider';
 import imageContext from '@/public/context-memo.jpg';
+import { InstallWidget } from '../install-widget';
+const data = {
+	npm: 'npm i @ws-utils/react-context-memo',
+	pnpm: 'pnpm i @ws-utils/react-context-memo',
+	yarn: 'yarn add @ws-utils/react-context-memo',
+};
 export const ContextMemo = () => {
 	return (
 		<div className='flex flex-col p-4 gap-2'>
@@ -11,6 +17,7 @@ export const ContextMemo = () => {
 				компонент высшего порядка, который позволяет извлекать функции-сеттеры
 				из React контекста и передавать их в оборачиваемый компонент как пропсы.
 			</p>
+			<InstallWidget data={data} />
 			<ul className='mt-4'>
 				<span className='text-2xl'>Params:</span>
 				<li className='ml-4'>

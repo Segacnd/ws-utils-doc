@@ -1,5 +1,10 @@
+import { InstallWidget } from '../install-widget';
 import { Devider } from './devider';
-
+const data = {
+	npm: 'npm i @ws-utils/react-use-debounce',
+	pnpm: 'pnpm i @ws-utils/react-use-debounce',
+	yarn: 'yarn add @ws-utils/react-use-debounce',
+};
 export const UseDebounce = () => {
 	return (
 		<div className='flex flex-col p-4 gap-2'>
@@ -11,6 +16,7 @@ export const UseDebounce = () => {
 				пока не пройдет определенное количество времени с момента последнего
 				изменения.
 			</p>
+			<InstallWidget data={data} />
 			<ul className='mt-4'>
 				<span className='text-2xl'>Params:</span>
 				<li className='ml-4'>
@@ -30,7 +36,6 @@ export const UseDebounce = () => {
 					момента последнего изменения value.
 				</li>
 			</ul>
-			
 		</div>
 	);
 };

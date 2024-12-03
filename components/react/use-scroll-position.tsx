@@ -1,4 +1,10 @@
+import { InstallWidget } from '../install-widget';
 import { Devider } from './devider';
+const data = {
+	npm: 'npm i @ws-utils/react-use-scroll-position',
+	pnpm: 'pnpm i @ws-utils/react-use-scroll-position',
+	yarn: 'yarn add @ws-utils/react-use-scroll-position',
+};
 export const UseScrollPosition = () => {
 	return (
 		<div className='flex flex-col p-4 gap-2'>
@@ -9,6 +15,7 @@ export const UseScrollPosition = () => {
 				положение прокрутки окна браузера по указанной оси и возвращает объект с
 				текущими значениями прокрутки.
 			</p>
+			<InstallWidget data={data} />
 			<ul className='mt-4'>
 				<span className='text-2xl'>Params:</span>
 				<li className='ml-4'>

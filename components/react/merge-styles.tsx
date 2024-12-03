@@ -1,6 +1,12 @@
 import Image from 'next/image';
 import { Devider } from './devider';
 import imageContext from '@/public/merge-styles.jpg';
+import { InstallWidget } from '../install-widget';
+const data = {
+	npm: 'npm i @ws-utils/react-merge-styles',
+	pnpm: 'pnpm i @ws-utils/react-merge-styles',
+	yarn: 'yarn add @ws-utils/react-merge-styles',
+};
 export const MergeStyles = () => {
 	return (
 		<div className='flex flex-col p-4 gap-2'>
@@ -11,6 +17,7 @@ export const MergeStyles = () => {
 				функция, которая объединяет несколько объектов CSS стилей в один
 				консолидированный объект.
 			</p>
+			<InstallWidget data={data} />
 			<ul className='mt-4'>
 				<span className='text-2xl'>Params:</span>
 				<li className='ml-4'>

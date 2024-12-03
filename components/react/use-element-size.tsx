@@ -1,6 +1,12 @@
 import Image from 'next/image';
 import { Devider } from './devider';
 import imageContext from '@/public/use-element-size.jpg';
+import { InstallWidget } from '../install-widget';
+const data = {
+	npm: 'npm i @ws-utils/react-use-element-size',
+	pnpm: 'pnpm i @ws-utils/react-use-element-size',
+	yarn: 'yarn add @ws-utils/react-use-element-size',
+};
 export const UseElementSize = () => {
 	return (
 		<div className='flex flex-col p-4 gap-2'>
@@ -10,6 +16,7 @@ export const UseElementSize = () => {
 				<span className='text-blue-500'>useElementSize</span> - позволяет
 				получить размеры (ширину и высоту) HTML элемента.
 			</p>
+			<InstallWidget data={data} />
 			<ul className='mt-4'>
 				<span className='text-2xl'>Params:</span>
 				<li className='ml-4'>

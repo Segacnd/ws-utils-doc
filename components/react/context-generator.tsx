@@ -1,16 +1,24 @@
 import Image from 'next/image';
 import { Devider } from './devider';
 import imageContext from '@/public/context-generator.jpg';
+import { InstallWidget } from '../install-widget';
+
+const data = {
+	npm: 'npm i @ws-utils/react-context-generator',
+	pnpm: 'pnpm i @ws-utils/react-context-generator',
+	yarn: 'yarn add @ws-utils/react-context-generator',
+};
 export const ContextGenerator = () => {
 	return (
 		<div className='flex flex-col p-4 gap-2'>
-			<Devider id={'context-generator'} invisible />
+			<Devider id={'context-generator'} />
 			<h3 className='text-3xl mb-4'>Context generator</h3>
 			<p className='pl-4'>
 				<span className='text-blue-500'>generateContext</span> - это утилита для
 				создания React контекста с предустановленными Provider и хуком
 				useContext.
 			</p>
+			<InstallWidget data={data} />
 			<ul className='mt-4'>
 				<span className='text-2xl'>Params:</span>
 				<li className='ml-4'>

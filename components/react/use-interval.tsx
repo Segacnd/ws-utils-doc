@@ -1,6 +1,12 @@
 import Image from 'next/image';
 import { Devider } from './devider';
 import imageContext from '@/public/use-interval.jpg';
+import { InstallWidget } from '../install-widget';
+const data = {
+	npm: 'npm i @ws-utils/react-use-interval',
+	pnpm: 'pnpm i @ws-utils/react-use-interval',
+	yarn: 'yarn add @ws-utils/react-use-interval',
+};
 export const UseInterval = () => {
 	return (
 		<div className='flex flex-col p-4 gap-2'>
@@ -10,6 +16,7 @@ export const UseInterval = () => {
 				<span className='text-blue-500'>useInterval </span> - позволяет
 				выполнять функцию обратного вызова через регулярные интервалы времени.
 			</p>
+			<InstallWidget data={data} />
 			<ul className='mt-4'>
 				<span className='text-2xl'>Params:</span>
 				<li className='ml-4'>

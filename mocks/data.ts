@@ -16,6 +16,14 @@ export const navigation = {
         { label: 'Use media query', path: '#use-media-query' },
         { label: 'Use outside click', path: '#use-outside-click' },
         {label: 'Use scroll position', path: '#use-scroll-position' },
+    ],
+    common: [
+        {label: 'Routes', path: '#routes' },
+        {label: 'Fetcher', path: '#fetcher' },
+        // {label: 'Query params', path: '#query-params' },
+        // {label: 'Url', path: '#url' },
+        {label: 'Merge classnames', path: '#merge-class-names' },
+
     ]
     
 }

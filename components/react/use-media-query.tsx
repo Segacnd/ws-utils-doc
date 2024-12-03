@@ -1,6 +1,12 @@
 import Image from 'next/image';
 import { Devider } from './devider';
 import imageContext from '@/public/use-media-query.jpg';
+import { InstallWidget } from '../install-widget';
+const data = {
+	npm: 'npm i @ws-utils/react-use-media-query',
+	pnpm: 'pnpm i @ws-utils/react-use-media-query',
+	yarn: 'yarn add @ws-utils/react-use-media-query',
+};
 export const UseMediaQuery = () => {
 	return (
 		<div className='flex flex-col p-4 gap-2'>
@@ -11,6 +17,7 @@ export const UseMediaQuery = () => {
 				отслеживать соответствие медиа-запроса текущему состоянию viewport
 				(области просмотра) браузера.
 			</p>
+				<InstallWidget data={data} />
 			<ul className='mt-4'>
 				<span className='text-2xl'>Params:</span>
 				<li className='ml-4'>
