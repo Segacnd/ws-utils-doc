@@ -26,15 +26,13 @@ export default function Home() {
 	return (
 		<div className=' flex'>
 			<aside className='w-[300px] p-2 h-screen pl-4 pt-6 sticky top-0 border-r border-white/50'>
-			
+				<a
+					href={'#instalation'}
+					className='block px-4 py-1.5 mb-4 text-lg font-medium text-white hover:text-white/60'
+				>
+					Instalation
+				</a>
 
-					<a
-						href={'#instalation'}
-						className='block px-4 py-1.5 mb-4 text-lg font-medium text-white hover:text-white/60'
-					>
-						Instalation
-					</a>
-			
 				<details open>
 					<summary>React</summary>
 					{navigation.react.map((item) => (
